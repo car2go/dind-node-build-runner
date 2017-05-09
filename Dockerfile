@@ -1,6 +1,6 @@
 FROM gitlab/dind
 
-MAINTAINER mcasimir
+MAINTAINER Felix Heck <felix.heck@daimler.com>
 
 ARG NODE_JS_VERSION
 
