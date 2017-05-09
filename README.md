@@ -16,6 +16,7 @@ Tools:
 - phantomjs
 - chrome
 - chromedriver
+- kubectl
 
 ## Usage
 
