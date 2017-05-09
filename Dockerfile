@@ -63,7 +63,7 @@ RUN \
     /etc/apt/sources.list.d/google-chrome.list \
   && rm -rf /var/lib/apt/lists/* \
   && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
-  && chmod +x /usr/local/bin/kubectl
+  && chmod +x /usr/local/bin/kubectl \
   && apt-get clean
 
 WORKDIR /usr/src/app
