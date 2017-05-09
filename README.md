@@ -23,8 +23,9 @@ Tools:
 docker run --privileged mcasimir/dind-node-build-runner
 ```
 
-## Build with Specific Node Version
+## Build (and Release) with Specific Node Version
 
 ```
-docker run --privileged --build-arg NODE_JS_VERSION='5' mcasimir/dind-node-build-runner
+sh build.sh --build-arg NODE_JS_VERSION='5'
+sh build-and-release.sh --build-arg NODE_JS_VERSION='5'
 ```
