@@ -2,6 +2,7 @@ FROM gitlab/dind
 
 MAINTAINER mcasimir
 
+ENV KUBECTL_VERSION v1.5.2
 ENV CHROME_DRIVER_VERSION 2.21
 ENV NODE_JS_VERSION 6
 ENV PHANTOM_JS_VERSION 2.1.1
@@ -61,6 +62,8 @@ RUN \
     /tmp/chromedriver_linux64.zip \
     /etc/apt/sources.list.d/google-chrome.list \
   && rm -rf /var/lib/apt/lists/* \
+  && curl -L https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl \
+  && chmod +x /usr/local/bin/kubectl
   && apt-get clean
 
 WORKDIR /usr/src/app
