@@ -7,8 +7,8 @@ Tools:
 - git (1.9.1)
 - docker (1.12.1, build 23cf638)
 - docker-compose (1.8.0, build f3628c7)
-- node (8.9.0)
-- npm (5.5.1)
+- node (8.11.1)
+- npm (5.6.0)
 - kubectl (1.8.2)
 - unzip
 
