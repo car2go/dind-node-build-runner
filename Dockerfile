@@ -4,7 +4,7 @@ LABEL maintainer="Raoul Jaeckel"
 
 ARG NODE_JS_VERSION
 
-ENV NODE_JS_VERSION ${NODE_JS_VERSION:-6}
+ENV NODE_JS_VERSION ${NODE_JS_VERSION:-8}
 
 RUN curl -sL https://deb.nodesource.com/setup_$NODE_JS_VERSION.x | sudo -E bash - \
   && apt-get update -qqy \
