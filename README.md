@@ -9,7 +9,7 @@ Tools:
 - docker-compose (1.8.0, build f3628c7)
 - node (8.11.1)
 - npm (5.6.0)
-- kubectl (1.8.2)
+- kubectl (1.10.1 -> latest version pulled from https://storage.googleapis.com/kubernetes-release/release/stable.txt)
 - unzip
 
 ## Usage
